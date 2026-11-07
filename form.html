@@ -1,0 +1,105 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h2>Course Registration Form</h2>
+    <form>
+    <fieldset>
+    <legend>Personal Details</legend>
+    <br>
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" required>
+    <br>
+    <br>
+    <label for="sname">Surname:</label>
+    <input type="text" id="sname" required>
+    <br>
+    <br>
+    <label for="mnumber">Mobile Number:</label>
+    <input type="tel" 
+    pattern="[6-9]{1}[0-9]{9}"
+    id="mnumber" >
+    <br>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email"  id="email">
+    <br>
+    <br>
+    <label for="pword">Password:</label>
+    <input type="password" id="pword" required>
+    <br>
+    <br>
+    <label for="cword">Confirm Password:</label>
+    <input type="password" id="cword" required>
+    <br>
+    <br>
+    <label for="DOB">Date of Birth:</label>
+    <input type="date" id="DOB"/>
+    <br>
+    <br>
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender"/>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender"/>
+    <label for="female">Female</label>
+    <input type="radio" id="Others" name="gender"/>
+    <label for="Others">Others</lable>
+    <br>
+    <br>
+    <label for="country">Select Country:</label>
+    <select id="country" name="country" required>
+        <option value="">--Select Country--</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+        <option value="Canada">Canada</option>
+        <option value="Australia">Australia</option>
+        </select>
+    <br>
+    <br>
+    <label for="picture">Upload Picture:</label>
+    <br>
+    <input type="file" id="picture" accept="image/*">
+    <br>
+    <br>
+    <input type="Reset" value="Reset">
+    </fieldset>
+    <br>
+    <br>
+    <fieldset>
+        <legend>Course Details</legend>
+        <label for="course">Select Course:</label>
+        <select id="course" name="course" required>
+            <option value="">--Select Course--</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="HTML & CSS">HTML & CSS</option>
+        </select>
+        <br>
+        <br>
+        <label>Delivery Mode:</label>
+        <input type="radio" id="online" name="mode"/>
+        <label for="online">Online</label>
+        <input type="radio" id="offline" name="mode"/>
+        <label for="offline">Offline</label>
+        <br>
+        <br>
+        <label for="comments">Comments:</label>
+        <br>
+        <textarea id="comments" name="comments"
+          rows="4" cols="40"
+        >
+        </textarea>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+
+    </fieldset>
+    </form>
+ </body>
+ </html>
